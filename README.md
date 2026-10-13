@@ -7,29 +7,38 @@ AI-powered web application that generates professional compliance audit reports 
 ## ⚡ Quick Start (3 steps)
 
 ### Step 1 — Get a FREE Groq API Key
-1. Go to **https://console.groq.com**
+
+1. Go to **[https://console.groq.com](https://console.groq.com)**
 2. Sign up (free) → Create API Key
 3. Copy the key
 
 ### Step 2 — Add your API key
+
 Open the `.env` file and paste your key:
-```
+
+```env
 VITE_GROQ_API_KEY=gsk_xxxxxxxxxxxxxxxxxxxxxxxx
+
 ```
 
 ### Step 3 — Run the app
+
 ```bash
 npm install
 npm run dev
+
 ```
+
 Open **http://localhost:5173** in your browser. Done!
 
 ---
 
 ## 🏗️ Build for Production
+
 ```bash
 npm run build
 npm run preview
+
 ```
 
 ---
@@ -37,19 +46,19 @@ npm run preview
 ## 🤖 AI Configuration
 
 | Setting | Value |
-|---|---|
+| --- | --- |
 | **Provider** | Groq API |
 | **Model** | `llama-3.3-70b-versatile` |
 | **Speed** | ~500 tokens/sec (extremely fast) |
 | **Cost** | Free tier: 30 req/min, 6000 req/day |
-| **API Docs** | https://console.groq.com/docs |
+| **API Docs** | [https://console.groq.com/docs](https://console.groq.com/docs) |
 
 ---
 
 ## 📋 Features
 
 | Feature | Description |
-|---|---|
+| --- | --- |
 | **3 Standards** | ISO 27001, NIST CSF 2.0, PCI-DSS v4.0 |
 | **Live Scoring** | Real-time compliance % updates as you assess |
 | **AI Analysis** | Llama 3.3 generates executive summary, strengths, gaps & recommendations |
@@ -62,23 +71,24 @@ npm run preview
 
 ## 🗂️ Project Structure
 
-```
+```text
 compliance-app/
-├── .env                    ← YOUR GROQ API KEY GOES HERE
-├── .env.example            ← Template
+├── .env                  ← YOUR GROQ API KEY GOES HERE
+├── .env.example          ← Template
 ├── index.html
 ├── package.json
 ├── vite.config.js
 └── src/
-    ├── App.jsx             ← Groq API call lives here
+    ├── App.jsx           ← Groq API call lives here
     ├── main.jsx
     ├── index.css
-    ├── data.js             ← All standards & controls
-    ├── components.jsx      ← Score gauge, badges, shared UI
-    ├── StepOrg.jsx         ← Step 1: org info
-    ├── StepStandard.jsx    ← Step 2: standard picker
-    ├── StepAssess.jsx      ← Step 3: controls assessment
-    └── StepReport.jsx      ← Step 4: generated report
+    ├── data.js           ← All standards & controls
+    ├── components.jsx    ← Score gauge, badges, shared UI
+    ├── StepOrg.jsx       ← Step 1: org info
+    ├── StepStandard.jsx  ← Step 2: standard picker
+    ├── StepAssess.jsx    ← Step 3: controls assessment
+    └── StepReport.jsx    ← Step 4: generated report
+
 ```
 
 ---
@@ -94,5 +104,30 @@ compliance-app/
 
 ---
 
-## 📄 License
-For educational and demonstration purposes.
+## 🖥️ Screenshots & Visual Interface
+
+### 🌐 1. Organization Setup & Landing
+
+![Dashboard View](screenshot/image1.png)
+
+### 📤 2. Choose a Compliance Standard
+
+![Dashboard View](screenshot/image2.png)
+
+### 📋 3. Interactive Assessment Controls
+
+![Dashboard View](screenshot/image3.png)
+
+### 📈 4.  Detailed Report Analysis View
+
+![Dashboard View](screenshot/image4.png)
+
+---
+
+## 👨‍💻 Author
+
+**Yakesh Krishnan D**
+
+Security Compliance Generator — Streamlining security compliance and policy generation workflows.
+
+⭐ If you find this project useful, consider giving the repository a star.
